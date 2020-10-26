@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>新版的todolist</title>
+    <link rel="stylesheet" href="../new/style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <form action="javascript:postAction()" required="required" id="form">
+          <label for="title">ToDoList</label>
+          <input
+            type="text"
+            id="title"
+            name="form"
+            placeholder="type here"
+            autocomplete="off"
+          />
+        </form>
+      </section>
+    </header>
+    <section>
+      <h2 class="columns">正在进行<span id="todocount"></span></h2>
+      <ol id="todolist"></ol>
+      <h2 class="columns">已经完成<span id="donecount"></span></h2>
+      <ul id="donelist"></ul>
+    </section>
+    <footer>tyy学习的todolist@anpu9<a id="clear" href="javascript:clear()">clear</a></footer>
+    
+    <script src="../new/index.js"></script>
+  </body>
+</html>
