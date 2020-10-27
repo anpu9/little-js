@@ -2,7 +2,7 @@
 
 ## 涉及的知识点
 
-- **存储**（对象数组）LocalStorage
+- ### **存储**（对象数组）LocalStorage
 
   - 得到json对象并转为js对象：
 
@@ -27,9 +27,11 @@
     }
     ```
 
+    ------
+
     
 
-- css网页布局 **移动端适配**
+- ### css网页布局 **移动端适配**
 
   -  `<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>`
 
@@ -49,7 +51,7 @@
 
     
 
-- form控件的`action`属性可以传输数据到php文件等 这里是到js文件里
+- ### form控件的`action`属性可以传输数据到php文件等 这里是到js文件里
 
   - `form.reset()`重置列表
 
@@ -76,7 +78,7 @@
 
     
 
-- **DOM动态操作**！最重要的知识点！
+- ### **DOM动态操作**！最重要的知识点！
 
   - **渲染**
 
@@ -116,7 +118,7 @@
     }
     ```
 
-  - 移除
+  - ### 移除
 
     ```
     function remove(i){//传入了索引值，取得相应的li
@@ -128,7 +130,7 @@
     }
     ```
 
-  - 编辑内容
+  - ### 编辑内容
 
     首先想一下！编辑内容需要什么？
 
