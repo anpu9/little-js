@@ -49,6 +49,8 @@
 
   - 双重边框`border-style:double;`
 
+  - 需要居中的元素使用`margin:0 auto`,再修改块级元素的宽度即可
+
     
 
 - ### form控件的`action`属性可以传输数据到php文件等 这里是到js文件里
@@ -176,5 +178,37 @@
     }
     ```
 
+  - ### 改变li状态的函数update
+  
+    首先想 li需要改变什么？
+  
+    1.选中的状态变了，他所在的栏不一样
+  
+    2.修改Li的innerHTML值，其实是json对象的todo的value改变了
+  
+    所以这个函数的参数需要（i，field,value) 分别是该对象的索引值，修改的属性，修改后的值
+  
+    ```
+    function update(i, field, value) {
+      let data = loadData();
+      let todo = data.splice(i, 1)[0];//把这个需要修改的对象拎出来
+      todo[field] = value;
+      data.splice(i, 0, todo);//修改后再放回去
+      saveData(data);
+      load();
+    }
+    ```
+  
+  - ### 全部清空
+  
+    需要用到localStorage.clear()
+  
+    ```
+    function clear(){
+        localStorage.clear();
+        load();
+    }
+    ```
+  
     
 
